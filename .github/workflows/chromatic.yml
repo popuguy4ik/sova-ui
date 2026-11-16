@@ -1,0 +1,19 @@
+# Визуальные тесты: при каждом push Chromatic собирает Storybook и сравнивает снимки всех историй с эталоном
+name: Chromatic
+
+on: push
+
+jobs:
+  chromatic:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run tokens
+      - run: npx chromatic --project-token=${{ secrets.CHROMATIC_TOKEN }} --exit-zero-on-changes
