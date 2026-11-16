@@ -1,4 +1,4 @@
-import{n as e}from"./rolldown-runtime-sJBDdmOt.js";import{i as t,r as n}from"./Icon-C35lnsGL.js";import"./Button-VHlkFp9G.js";var r;function i(){return(i=e((()=>{t(),r=({placeholder:e=`Поиск по чатам`,value:t=``,buttonLabel:r=`Найти`,showButton:i=!0,onSearch:a}={})=>{let o=document.createElement(`form`);o.className=`search`,o.setAttribute(`role`,`search`),o.innerHTML=`
+import{n as e}from"./rolldown-runtime-sJBDdmOt.js";import{i as t,r as n}from"./Icon-C35lnsGL.js";import"./Button-DuMTGNfc.js";var r;function i(){return(i=e((()=>{t(),r=({placeholder:e=`Поиск по чатам`,value:t=``,buttonLabel:r=`Найти`,showButton:i=!0,onSearch:a}={})=>{let o=document.createElement(`form`);o.className=`search`,o.setAttribute(`role`,`search`),o.innerHTML=`
     <div class="search__field">
       ${n(`search`,{size:20})}
       <label class="visually-hidden" for="q">${e}</label>

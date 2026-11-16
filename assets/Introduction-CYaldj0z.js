@@ -1,4 +1,4 @@
-import{n as e}from"./rolldown-runtime-sJBDdmOt.js";import{i as t,r as n}from"./react-DITjJg24.js";import{a as r}from"./chunk-W22LQPXL-DkWiGpo7.js";import{a as i,o as a}from"./blocks-DV9xR2YA.js";function o(e){let n={code:`code`,h1:`h1`,h2:`h2`,li:`li`,ol:`ol`,p:`p`,pre:`pre`,strong:`strong`,...t(),...e.components};return(0,c.jsxs)(c.Fragment,{children:[(0,c.jsx)(i,{title:`Введение`}),`
+import{n as e}from"./rolldown-runtime-sJBDdmOt.js";import{i as t,r as n}from"./react-DITjJg24.js";import{a as r}from"./chunk-W22LQPXL-DkWiGpo7.js";import{a as i,o as a}from"./blocks-Dx_akYV1.js";function o(e){let n={code:`code`,h1:`h1`,h2:`h2`,li:`li`,ol:`ol`,p:`p`,pre:`pre`,strong:`strong`,...t(),...e.components};return(0,c.jsxs)(c.Fragment,{children:[(0,c.jsx)(i,{title:`Введение`}),`
 `,(0,c.jsx)(n.h1,{id:`sova-ui`,children:`Sova UI`}),`
 `,(0,c.jsxs)(n.p,{children:[`Дизайн-система продуктов мессенджера «Сова»: сайта, веб-версии мессенджера и панели службы поддержки. Версия `,(0,c.jsx)(n.strong,{children:`1.1.0`}),`.`]}),`
 `,(0,c.jsx)(n.h2,{id:`принципы`,children:`Принципы`}),`
