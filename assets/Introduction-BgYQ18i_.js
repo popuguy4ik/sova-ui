@@ -1,4 +1,4 @@
-import{n as e}from"./rolldown-runtime-sJBDdmOt.js";import{i as t,r as n}from"./react-DITjJg24.js";import{a as r}from"./chunk-W22LQPXL-DkWiGpo7.js";import{a as i,o as a}from"./blocks-Dx_akYV1.js";function o(e){let n={code:`code`,h1:`h1`,h2:`h2`,li:`li`,ol:`ol`,p:`p`,pre:`pre`,strong:`strong`,...t(),...e.components};return(0,c.jsxs)(c.Fragment,{children:[(0,c.jsx)(i,{title:`Введение`}),`
+import{n as e}from"./rolldown-runtime-sJBDdmOt.js";import{i as t,r as n}from"./react-DITjJg24.js";import{a as r}from"./chunk-W22LQPXL-DkWiGpo7.js";import{a as i,o as a}from"./blocks-CTxA1OFD.js";function o(e){let n={code:`code`,h1:`h1`,h2:`h2`,li:`li`,ol:`ol`,p:`p`,pre:`pre`,strong:`strong`,ul:`ul`,...t(),...e.components};return(0,c.jsxs)(c.Fragment,{children:[(0,c.jsx)(i,{title:`Введение`}),`
 `,(0,c.jsx)(n.h1,{id:`sova-ui`,children:`Sova UI`}),`
 `,(0,c.jsxs)(n.p,{children:[`Дизайн-система продуктов мессенджера «Сова»: сайта, веб-версии мессенджера и панели службы поддержки. Версия `,(0,c.jsx)(n.strong,{children:`1.1.0`}),`.`]}),`
 `,(0,c.jsx)(n.h2,{id:`принципы`,children:`Принципы`}),`
@@ -10,13 +10,13 @@ import{n as e}from"./rolldown-runtime-sJBDdmOt.js";import{i as t,r as n}from"./r
 `,(0,c.jsxs)(n.li,{children:[(0,c.jsx)(n.strong,{children:`Расширяемость.`}),` Новый компонент собирается из существующих атомов и молекул, а не рисуется заново.`]}),`
 `]}),`
 `,(0,c.jsx)(n.h2,{id:`как-устроена`,children:`Как устроена`}),`
-`,(0,c.jsx)(n.p,{children:`| Уровень | Компоненты |
-|---|---|
-| Foundations | Цвета, типографика, отступы, радиусы, тени, анимации |
-| Atoms | Button, Input, Checkbox, Radio, Switch, Badge, Icon, Avatar, Spinner |
-| Molecules | FormField, SearchBar, Pagination, Breadcrumbs, Tabs, Tooltip |
-| Organisms | Header, Footer, Card (product, article, user), Modal, Table, Form |
-| Templates | Страница блога: шаблон и страница с данными |`}),`
+`,(0,c.jsxs)(n.ul,{children:[`
+`,(0,c.jsxs)(n.li,{children:[(0,c.jsx)(n.strong,{children:`Foundations:`}),` цвета, типографика, отступы, радиусы, тени, анимации.`]}),`
+`,(0,c.jsxs)(n.li,{children:[(0,c.jsx)(n.strong,{children:`Atoms:`}),` Button, Input, Checkbox, Radio, Switch, Badge, Icon, Avatar, Spinner.`]}),`
+`,(0,c.jsxs)(n.li,{children:[(0,c.jsx)(n.strong,{children:`Molecules:`}),` FormField, SearchBar, Pagination, Breadcrumbs, Tabs, Tooltip.`]}),`
+`,(0,c.jsxs)(n.li,{children:[(0,c.jsx)(n.strong,{children:`Organisms:`}),` Header, Footer, Card (product, article, user), Modal, Table, Form.`]}),`
+`,(0,c.jsxs)(n.li,{children:[(0,c.jsx)(n.strong,{children:`Templates:`}),` страница блога, шаблон без данных и страница с данными.`]}),`
+`]}),`
 `,(0,c.jsx)(n.h2,{id:`токены`,children:`Токены`}),`
 `,(0,c.jsxs)(n.p,{children:[`Токены описаны в JSON по стандарту W3C Design Tokens в папке `,(0,c.jsx)(n.code,{children:`tokens/`}),`. Style Dictionary собирает из них два файла: `,(0,c.jsx)(n.code,{children:`tokens.css`}),` со светлой темой и `,(0,c.jsx)(n.code,{children:`tokens-dark.css`}),` с переопределениями для темной. Тема включается атрибутом `,(0,c.jsx)(n.code,{children:`data-theme="dark"`}),` на `,(0,c.jsx)(n.code,{children:`<html>`}),`, а в Storybook переключателем на панели сверху.`]}),`
 `,(0,c.jsx)(n.pre,{children:(0,c.jsx)(n.code,{className:`language-bash`,children:`npm run tokens           # JSON → CSS
