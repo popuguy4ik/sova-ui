@@ -1,0 +1,27 @@
+/**
+ * Сгенерировано Style Dictionary из tokens/*.json, не редактировать вручную; темная тема
+ */
+
+:root[data-theme="dark"] {
+  --color-semantic-background-default: var(--color-primitive-gray-950);
+  --color-semantic-background-alt: var(--color-primitive-gray-900);
+  --color-semantic-background-surface: var(--color-primitive-gray-800);
+  --color-semantic-background-inverse: var(--color-primitive-gray-100);
+  --color-semantic-text-default: var(--color-primitive-gray-100);
+  --color-semantic-text-muted: var(--color-primitive-gray-400);
+  --color-semantic-text-placeholder: var(--color-primitive-gray-400);
+  --color-semantic-text-link: var(--color-primitive-indigo-300);
+  --color-semantic-text-inverse: var(--color-primitive-gray-900);
+  --color-semantic-border-default: var(--color-primitive-gray-700);
+  --color-semantic-border-strong: var(--color-primitive-gray-600);
+  --color-semantic-border-focus: var(--color-primitive-violet-300);
+  --color-semantic-action-primary-soft: var(--color-primitive-indigo-800);
+  --color-semantic-feedback-info: var(--color-primitive-indigo-300);
+  --color-semantic-feedback-info-bg: var(--color-primitive-indigo-800);
+  --color-semantic-feedback-success: var(--color-primitive-green-400);
+  --color-semantic-feedback-success-bg: var(--color-primitive-green-900);
+  --color-semantic-feedback-warning: var(--color-primitive-amber-400);
+  --color-semantic-feedback-warning-bg: var(--color-primitive-amber-900);
+  --color-semantic-feedback-error: var(--color-primitive-red-400);
+  --color-semantic-feedback-error-bg: var(--color-primitive-red-900);
+}

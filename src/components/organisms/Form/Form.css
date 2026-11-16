@@ -1,0 +1,12 @@
+.form { max-width: 720px; padding: var(--space-8); background: var(--color-semantic-background-surface); border: 1px solid var(--color-semantic-border-default); border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); }
+.form__title { font-size: var(--font-size-2xl); }
+.form__grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-6); }
+.form__grid .form-field { max-width: none; }
+.form__wide { grid-column: 1 / -1; }
+.form__submit { justify-self: start; }
+.form__status { margin: var(--space-4) 0 0; font-weight: var(--font-weight-semibold); }
+.form__status:empty { display: none; }
+.form__status.is-error { color: var(--color-semantic-feedback-error); }
+.form__status.is-success { color: var(--color-semantic-feedback-success); }
+.form__submit .spinner { color: inherit; }
+@media (max-width: 640px) { .form__grid { grid-template-columns: 1fr; } .form { padding: var(--space-6); } }

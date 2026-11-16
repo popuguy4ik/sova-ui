@@ -1,0 +1,15 @@
+.spinner { display: inline-grid; place-items: center; color: var(--color-semantic-action-primary); }
+.spinner__circle {
+  display: block;
+  border: 3px solid color-mix(in srgb, currentColor 20%, transparent);
+  border-top-color: currentColor;
+  border-radius: var(--radius-pill);
+  animation: spinner-rotate 0.8s linear infinite;
+}
+.spinner--sm .spinner__circle { width: 16px; height: 16px; border-width: 2px; }
+.spinner--md .spinner__circle { width: 24px; height: 24px; }
+.spinner--lg .spinner__circle { width: 40px; height: 40px; border-width: 4px; }
+@keyframes spinner-rotate { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) {
+  .spinner__circle { animation-duration: 2.4s !important; animation-iteration-count: infinite !important; }
+}

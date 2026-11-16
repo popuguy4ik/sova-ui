@@ -1,0 +1,12 @@
+.table-wrap { max-width: 100%; overflow-x: auto; border: 1px solid var(--color-semantic-border-default); border-radius: var(--radius-lg); background: var(--color-semantic-background-surface); }
+.table { width: 100%; border-collapse: collapse; font-size: var(--font-size-sm); color: var(--color-semantic-text-default); }
+.table caption { padding: var(--space-4) var(--space-4) var(--space-2); text-align: left; font-family: var(--font-family-display); font-size: var(--font-size-lg); font-weight: var(--font-weight-bold); }
+.table th, .table td { padding: var(--space-3) var(--space-4); text-align: left; border-bottom: 1px solid var(--color-semantic-border-default); white-space: nowrap; }
+.table th { color: var(--color-semantic-text-muted); font-weight: var(--font-weight-semibold); background: var(--color-semantic-background-alt); }
+.table th button { display: inline-flex; align-items: center; gap: var(--space-1); padding: 0; font: inherit; color: inherit; background: none; border: 0; cursor: pointer; }
+.table th button:hover, .table th[aria-sort="ascending"] button, .table th[aria-sort="descending"] button { color: var(--color-semantic-text-link); }
+.table .is-end { text-align: right; }
+.table tbody tr { transition: background-color var(--motion-duration-fast) var(--motion-easing-standard); }
+.table tbody tr:hover { background: color-mix(in srgb, var(--color-semantic-action-primary) 6%, transparent); }
+.table tbody tr:last-child td { border-bottom: 0; }
+.table--striped tbody tr:nth-child(even) { background: var(--color-semantic-background-default); }

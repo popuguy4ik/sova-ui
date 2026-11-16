@@ -1,0 +1,9 @@
+.tpl__main { max-width: 1264px; margin: 0 auto; padding: var(--space-8) var(--space-8) var(--space-16); }
+.tpl__title { margin: var(--space-6) 0 var(--space-3); font-size: var(--font-size-5xl); font-weight: var(--font-weight-black); }
+.tpl__lead { max-width: 640px; color: var(--color-semantic-text-muted); font-size: var(--font-size-lg); }
+.tpl__tools { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--space-4); margin: var(--space-8) 0; }
+.tpl__tools .search { flex: 0 1 360px; }
+.tpl__grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: var(--space-6); }
+.tpl__grid .card { max-width: none; }
+.tpl__pagination { display: flex; justify-content: center; margin-top: var(--space-12); }
+@media (max-width: 767px) { .tpl__main { padding-inline: var(--space-4); } .tpl__title { font-size: var(--font-size-4xl); } }

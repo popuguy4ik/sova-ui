@@ -1,0 +1,100 @@
+{
+  "color": {
+    "semantic": {
+      "background": {
+        "default": {
+          "$value": "{color.primitive.gray.950}",
+          "$type": "color"
+        },
+        "alt": {
+          "$value": "{color.primitive.gray.900}",
+          "$type": "color"
+        },
+        "surface": {
+          "$value": "{color.primitive.gray.800}",
+          "$type": "color"
+        },
+        "inverse": {
+          "$value": "{color.primitive.gray.100}",
+          "$type": "color"
+        }
+      },
+      "text": {
+        "default": {
+          "$value": "{color.primitive.gray.100}",
+          "$type": "color"
+        },
+        "muted": {
+          "$value": "{color.primitive.gray.400}",
+          "$type": "color"
+        },
+        "placeholder": {
+          "$value": "{color.primitive.gray.400}",
+          "$type": "color"
+        },
+        "link": {
+          "$value": "{color.primitive.indigo.300}",
+          "$type": "color"
+        },
+        "inverse": {
+          "$value": "{color.primitive.gray.900}",
+          "$type": "color"
+        }
+      },
+      "border": {
+        "default": {
+          "$value": "{color.primitive.gray.700}",
+          "$type": "color"
+        },
+        "strong": {
+          "$value": "{color.primitive.gray.600}",
+          "$type": "color"
+        },
+        "focus": {
+          "$value": "{color.primitive.violet.300}",
+          "$type": "color"
+        }
+      },
+      "action": {
+        "primary-soft": {
+          "$value": "{color.primitive.indigo.800}",
+          "$type": "color"
+        }
+      },
+      "feedback": {
+        "info": {
+          "$value": "{color.primitive.indigo.300}",
+          "$type": "color"
+        },
+        "info-bg": {
+          "$value": "{color.primitive.indigo.800}",
+          "$type": "color"
+        },
+        "success": {
+          "$value": "{color.primitive.green.400}",
+          "$type": "color"
+        },
+        "success-bg": {
+          "$value": "{color.primitive.green.900}",
+          "$type": "color"
+        },
+        "warning": {
+          "$value": "{color.primitive.amber.400}",
+          "$type": "color"
+        },
+        "warning-bg": {
+          "$value": "{color.primitive.amber.900}",
+          "$type": "color"
+        },
+        "error": {
+          "$value": "{color.primitive.red.400}",
+          "$type": "color"
+        },
+        "error-bg": {
+          "$value": "{color.primitive.red.900}",
+          "$type": "color"
+        }
+      }
+    }
+  }
+}

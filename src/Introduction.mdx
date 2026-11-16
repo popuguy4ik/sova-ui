@@ -1,0 +1,44 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Введение" />
+
+# Sova UI
+
+Дизайн-система продуктов мессенджера «Сова»: сайта, веб-версии мессенджера и панели службы поддержки. Версия **1.1.0**.
+
+## Принципы
+
+1. **Приватность видна.** Все, что касается безопасности (шифрование, устройства, удаление данных), оформлено явно и не прячется в мелкий текст. Для необратимых действий есть отдельный вариант `danger`.
+2. **Работает на слабом интернете.** Никаких тяжелых библиотек: компоненты на чистом HTML, CSS и JS, шрифты лежат вместе с системой.
+3. **Доступность по умолчанию.** Контраст не ниже WCAG 2.1 AA в обеих темах, у каждого интерактивного элемента виден фокус, есть роли и подписи ARIA.
+4. **Только токены.** Компоненты не используют цвета напрямую, только семантические токены. Поэтому темная тема и смена бренда делаются в одном месте.
+5. **Расширяемость.** Новый компонент собирается из существующих атомов и молекул, а не рисуется заново.
+
+## Как устроена
+
+| Уровень | Компоненты |
+|---|---|
+| Foundations | Цвета, типографика, отступы, радиусы, тени, анимации |
+| Atoms | Button, Input, Checkbox, Radio, Switch, Badge, Icon, Avatar, Spinner |
+| Molecules | FormField, SearchBar, Pagination, Breadcrumbs, Tabs, Tooltip |
+| Organisms | Header, Footer, Card (product, article, user), Modal, Table, Form |
+| Templates | Страница блога: шаблон и страница с данными |
+
+## Токены
+
+Токены описаны в JSON по стандарту W3C Design Tokens в папке `tokens/`. Style Dictionary собирает из них два файла: `tokens.css` со светлой темой и `tokens-dark.css` с переопределениями для темной. Тема включается атрибутом `data-theme="dark"` на `<html>`, а в Storybook переключателем на панели сверху.
+
+```bash
+npm run tokens           # JSON → CSS
+npm run storybook        # документация на localhost:6006
+npm run build-storybook  # статический сайт в storybook-static/
+```
+
+## Использование
+
+```js
+import 'sova-ui/src/styles/global.css';
+import { createButton } from 'sova-ui/src/components/atoms/Button/Button.js';
+
+document.body.append(createButton({ label: 'Скачать', variant: 'primary', size: 'lg' }));
+```

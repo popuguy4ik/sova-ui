@@ -1,0 +1,21 @@
+.modal {
+  width: min(480px, calc(100% - 32px));
+  padding: 0;
+  color: var(--color-semantic-text-default);
+  background: var(--color-semantic-background-surface);
+  border: 1px solid var(--color-semantic-border-default);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-xl);
+}
+.modal::backdrop { background: var(--color-semantic-background-overlay); -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px); }
+.modal[open] { animation: modal-in var(--motion-duration-base) var(--motion-easing-out); }
+@keyframes modal-in { from { opacity: 0; transform: translateY(16px) scale(0.98); } }
+.modal__box { position: relative; padding: var(--space-8); }
+.modal__close { position: absolute; top: var(--space-4); right: var(--space-4); display: grid; place-items: center; width: 40px; height: 40px; padding: 0; color: var(--color-semantic-text-muted); background: transparent; border: 0; border-radius: var(--radius-pill); cursor: pointer; }
+.modal__close:hover { color: var(--color-semantic-text-default); background: var(--color-semantic-background-alt); }
+.modal__icon { display: inline-grid; place-items: center; width: 48px; height: 48px; margin-bottom: var(--space-4); border-radius: var(--radius-pill); background: var(--color-semantic-feedback-error-bg); color: var(--color-semantic-feedback-error); }
+.modal__title { margin: 0 var(--space-8) var(--space-3) 0; font-size: var(--font-size-2xl); }
+.modal__text { margin: 0 0 var(--space-8); color: var(--color-semantic-text-muted); }
+.modal__actions { display: flex; justify-content: flex-end; gap: var(--space-3); }
+/* Статичный вид для документации: окно показывается прямо на странице */
+.modal--inline { position: static; display: block; margin: 0; animation: none; }

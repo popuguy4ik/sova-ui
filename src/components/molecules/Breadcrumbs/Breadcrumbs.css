@@ -1,0 +1,13 @@
+.breadcrumbs ol { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-1) var(--space-2); margin: 0; padding: 0; list-style: none; font-size: var(--font-size-sm); }
+.breadcrumbs li { display: inline-flex; align-items: center; gap: var(--space-2); color: var(--color-semantic-text-muted); }
+.breadcrumbs li + li::before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  background: currentColor;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m9 18l6-6l-6-6'/%3E%3C/svg%3E") center / contain no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m9 18l6-6l-6-6'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+.breadcrumbs a { color: var(--color-semantic-text-muted); text-decoration: none; }
+.breadcrumbs a:hover { color: var(--color-semantic-text-link); text-decoration: underline; }
+.breadcrumbs [aria-current="page"] { color: var(--color-semantic-text-default); font-weight: var(--font-weight-medium); }
