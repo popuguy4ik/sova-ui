@@ -28,9 +28,12 @@
 .btn--block { width: 100%; }
 
 /* Варианты */
-.btn--primary { background: var(--color-semantic-action-primary); color: var(--color-semantic-text-on-action); }
+.btn--primary {
+  background: linear-gradient(135deg, var(--color-semantic-action-primary), var(--color-semantic-action-secondary));
+  color: var(--color-semantic-text-on-action);
+}
 .btn--primary:hover, .btn--primary.is-hover {
-  background: var(--color-semantic-action-primary-hover);
+  background: linear-gradient(135deg, var(--color-semantic-action-primary-hover), var(--color-semantic-action-primary));
   box-shadow: 0 8px 20px -8px color-mix(in srgb, var(--color-semantic-action-primary) 70%, transparent);
   transform: translateY(-1px);
 }
@@ -64,7 +67,7 @@
 .btn:active { transform: translateY(0); }
 .btn:focus-visible, .btn.is-focus { outline: 3px solid var(--color-semantic-border-focus); outline-offset: 2px; }
 .btn:disabled { opacity: 0.5; cursor: not-allowed; transform: none; box-shadow: none; }
-.btn--primary:disabled { background: var(--color-semantic-action-primary); }
+.btn--primary:disabled { background: linear-gradient(135deg, var(--color-semantic-action-primary), var(--color-semantic-action-secondary)); }
 .btn--secondary:disabled { background: transparent; color: var(--color-semantic-text-link); border-color: currentColor; }
 .btn--ghost:disabled { background: transparent; }
 .btn--danger:disabled { background: var(--color-semantic-action-danger); }

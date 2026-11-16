@@ -2,6 +2,15 @@
 
 Формат основан на [Keep a Changelog](https://keepachangelog.com/ru/1.1.0/), версии по [Semantic Versioning](https://semver.org/lang/ru/).
 
+## [1.1.0] - 2026-11-16
+
+### Added
+- Визуальные тесты в Chromatic: GitHub Actions запускает проверку при каждом push.
+- Публикация документации на GitHub Pages: `npm run deploy-storybook`.
+
+### Changed
+- `Button`: вариант `primary` залит градиентом из `action-primary` в `action-secondary`, как логотип Совы.
+
 ## [1.0.0] - 2026-11-16
 
 ### Added
