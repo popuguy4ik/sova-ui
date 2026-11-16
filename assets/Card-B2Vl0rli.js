@@ -1,0 +1,13 @@
+import{n as e}from"./rolldown-runtime-sJBDdmOt.js";import{n as t,t as n}from"./Avatar-Bx-Q1jUX.js";import{i as r,r as i}from"./Icon-C35lnsGL.js";import{n as a,t as o}from"./Badge-CWX16bm4.js";import{n as s,t as c}from"./Button-GeRw_Tps.js";var l,u,d;function f(){return(f=e((()=>{r(),a(),t(),s(),l=({title:e=`Сова Плюс`,price:t=`199 ₽`,period:n=`в месяц`,features:r=[],badge:a=``,actionLabel:s=`Подключить`,featured:l=!1,state:u=`default`}={})=>{let d=document.createElement(`article`);return d.className=[`card`,`card--product`,l?`card--featured`:``,u===`hover`?`is-hover`:``].filter(Boolean).join(` `),d.innerHTML=`
+    <div class="card__body">
+      <div class="card__head"><h3 class="card__title">${e}</h3></div>
+      <p class="card__price"><strong>${t}</strong> <span>${n}</span></p>
+      <ul class="card__features">${r.map(e=>`<li>${i(`check`,{size:20})}<span>${e}</span></li>`).join(``)}</ul>
+    </div>`,a&&d.querySelector(`.card__head`).append(o({label:a,tone:`info`,icon:!1})),d.querySelector(`.card__body`).append(c({label:s,variant:l?`primary`:`secondary`,block:!0})),d},u=({image:e=`./static/covers/post-privacy.svg`,tag:t=`Советы`,title:n=`Пять настроек приватности`,text:r=``,meta:a=``,href:o=`#`,state:s=`default`}={})=>{let c=document.createElement(`article`);return c.className=[`card`,`card--article`,s===`hover`?`is-hover`:``].filter(Boolean).join(` `),c.innerHTML=`
+    <img class="card__image" src="${e}" alt="" width="640" height="360" loading="lazy">
+    <div class="card__body">
+      <span class="card__tag">${t}</span>
+      <h3 class="card__title"><a class="card__link" href="${o}">${n}</a></h3>
+      <p class="card__text">${r}</p>
+      <div class="card__meta"><span>${a}</span>${i(`arrow-right`,{size:20})}</div>
+    </div>`,c},d=({initials:e=`ЕС`,color:t=`night`,name:r=`Екатерина Соколова`,role:i=`Основатель и CEO`,bio:a=``,online:o=!1,state:s=`default`}={})=>{let l=document.createElement(`article`);l.className=[`card`,`card--user`,s===`hover`?`is-hover`:``].filter(Boolean).join(` `),l.innerHTML=`<div class="card__body"></div>`;let u=l.querySelector(`.card__body`);return u.append(n({initials:e,color:t,size:`lg`,online:o})),u.insertAdjacentHTML(`beforeend`,`<h3 class="card__title">${r}</h3><p class="card__role">${i}</p><p class="card__text">${a}</p>`),u.append(c({label:`Написать`,variant:`secondary`,size:`sm`,icon:`message-circle`})),l}})))()}export{f as i,l as n,d as r,u as t};
